@@ -1,0 +1,180 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <title>Recipe Junk</title>
+        <meta name="description" content="\Recipe Database">
+        <meta name="Tom" content="LUL">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="animations.css">
+    </head>
+
+    <header id="recipe-list-header">
+      <div class="top-nav shadow">
+        <nav class="top-nav-padding navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="index.html">Recipe Database</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a id="your-recipe-link" class="nav-link" href="YourRecipes.html">Your Recipes</a>
+              </li>
+              <li class="nav-item">
+                <a id="our-recipe-link" class="nav-link" href="ourRecipes.html">Our Recipes</a>
+              </li>
+              <li class="nav-item">
+                <a id="loginLink" class="nav-link" href="" data-toggle="modal" data-target="#loginModal"><img class='profile-image' src="Images/ProfileImage.png">Log-in</a>
+              </li>
+            </ul>
+            
+          </div>
+        </nav>  
+      </div> 
+  </header>
+
+  <!--Modals-->
+
+  <!--Login Modal-->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="InputEmail1">Email Address</label>
+              <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="InputPassword">Password</label>
+              <input type="password" class="form-control" id="InputPassword">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="Check">
+              <label class="form-check-label" for="Check">Keep me signed in</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Recipe Modal-->
+  <div class="recipeModal"></div>
+  <!--/Recipe Modal-->
+
+  
+
+    <body id="yourRecipeBody">
+
+      <div id="search-nav" class="sidenav">
+        <a  class="closebtn" onclick="closeSearchNav()">&times;</a>
+        <div class="flex-column-container">
+          <input class="form-control" type="text" id="name-input" placeholder="Dish Name"> 
+          <button class="btn btn-primary btn-lg" type="button" id="nameBtn">Get Dish</button>
+        </div>
+      </div>
+      
+      <div id="filter-nav" class="sidenav">
+        <a class="closebtn" onclick="closeFilterNav()">&times;</a>
+        
+          <div class="meal-filter">
+            <h3 class="blade-heading">Meal</h3>
+            <label for="breakfastCheckbox">
+              <input type="checkbox" class="mealCheckbox" id="breakfastCheckbox" name="breakfast">Breakfast
+            </label>
+            <label for="lunchCheckbox">
+              <input type="checkbox" class="mealCheckbox" id="lunchCheckbox" name="lunch">Lunch
+            </label>
+            <label for="dinnerCheckbox">
+              <input type="checkbox" class="mealCheckbox" id="dinnerCheckbox" name="dinner">Dinner
+            </label>
+          </div>
+
+          <div class="ingredient-filter">
+            <h3 class="blade-heading">Ingredients</h3>
+            
+            <div class="ingredient-input-list">
+              <div class="ingredient-input-div"><input type="text" class="form-control ingredient-input" placeholder="Ingredient"></div> 
+            </div>
+
+              <div class='ingredient-btns'>
+                <label for="and">
+                  <input type="radio" id="and" name="and/or" checked>
+                  And
+                </label>
+                <label for="or">
+                  <input type="radio" id="or" name="and/or">
+                  Or
+                  </label>
+                <button class="btn btn-outline-primary" type="button" id="ingredientAddBtn">Add</button>
+                <button class="btn btn-outline-primary" type="button" id="ingredientRemoveBtn">Remove</button>
+                <button class="btn btn-outline-primary" type="button" id="ingredientClearBtn">Clear</button>
+              </div>
+          </div>
+          
+        <button class="btn btn-primary btn-lg" type="button" id="ingredientBtn">Get Dish</button>
+        
+      </div>
+      
+    
+      
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <div id="main">
+        <div id="refinement" class="">
+          <nav id="" class='wrapper refinement-container'>
+              <a onclick="openSearchNav()" class="refinement-group" id="yourSearch" >Search</a>
+              <a onclick="openFilterNav()" class="refinement-group" id="yourFilter">Filter</a>
+              <a class="refinement-group" id="resetBtn">Reset</a>
+              <a href="RecipeAdd.html" class="refinement-group ml-auto" id="addRecipe">Add Recipe</a>
+          </nav>
+      </div>
+       
+
+        <div class="recipe-list-container">
+          <div class="recipe-list flex-container fade-in pt-3"></div>
+        </div>
+      </div>
+
+      
+
+        
+
+      
+
+
+      
+        
+
+      
+
+
+        <!--<script src="script.js"></script>-->
+        <script src="yourRecipesScript.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" 
+        crossorigin="anonymous"></script>
+    </body>
+
+    <footer>
+      
+    </footer>
+</html>

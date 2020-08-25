@@ -1,0 +1,183 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Add a Recipe</title>
+  <meta name="description" content="Recipe Add Form">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<header id="recipe-list-header">
+  <div class="top-nav shadow">
+    <nav class="top-nav-padding navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html">Recipe Database</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a id="your-recipe-link" class="nav-link" href="YourRecipes.html">Your Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a id="our-recipe-link" class="nav-link" href="ourRecipes.html">Our Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a id="loginLink" class="nav-link" href="" data-toggle="modal" data-target="#loginModal"><img class='profile-image' src="Images/ProfileImage.png">Log-in</a>
+          </li>
+        </ul>
+        
+      </div>
+    </nav>  
+  </div> 
+</header>
+
+<body id="addMain">
+  
+  <div class="form-landing shadow">
+    <form action="" class="form-information">
+      <h1 class="mb-3 text-center">Add Your Dish</h1>
+      <div class="row mb-4">
+        <div class="col">
+          <h4>Name</h4>
+          <input type="text" class="form-control" placeholder="Dish Name">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <h4>Video Link</h4>
+          <input type="text" class="form-control" placeholder="Url...">
+        </div>
+      </div>
+      
+
+      <div class="mt-4 form-group row justify-content-between">
+
+        <div class="col-sm-auto mr-3 mb-3">
+          <h4>Meals</h4>  
+          <div class="form-check">
+            <label class="form-check-label" for="breakfastCheck">
+            <input class="form-check-input" type="checkbox" value="" id="breakfastCheck">
+              Breakfast
+            </label>
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label" for="lunchCheck">
+            <input class="form-check-input" type="checkbox" value="" id="lunchCheck">
+              Lunch
+            </label>
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label" for="dinnerCheck">
+            <input class="form-check-input" type="checkbox" value="" id="dinnerCheck">
+              Dinner
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group col-auto">
+          <h4>Picture</h4>
+          <div class="preview-field">
+            Picture Preview
+          </div>
+  
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="picture" accept="image/*">
+            <label class="custom-file-label" for="picture">Choose file</label>
+          </div>
+        </div>
+        
+
+        <div class="form-group col-auto">
+          <label for="description" class="h4">Description</label>
+          <textarea class="form-control" id="description" rows="6" cols="40"></textarea>
+        </div>
+
+      </div>
+
+      <h4 class="mb-2">Ingredients</h4>
+
+      <div class='row'>
+        <div class="ingredient-btn">
+          <button id="ingredient-add-button" type="button" class="btn btn-primary">Add</button>
+        </div>
+
+        <div class="ingredient-btn">
+          <button id="ingredient-remove-button" type="button" class="btn btn-primary">Remove</button>
+        </div>
+      </div>
+
+      <div id="ingredient-list" class="container">
+        <div class="ingredient-list-content row">
+          <div class="mb-2 col-md-2 col-sm-3 col-xs-3 ingredient-amount">
+            <label for="measurement1">Amount</label>
+            <input type="input" class="form-control measurement-input" id="measurement1">
+          </div>
+  
+          <div class="mb-2 col-md-6 col-sm-6 col-xs-auto ingredient-name">
+            <label for="ingredient1">Ingredient</label>
+            <input type="input" class="form-control ingredient-input" id="ingredient1" placeholder="Ingredient 1">
+          </div>
+        </div>
+
+      </div>
+
+      <h4 class="mb-2">Instructions</h4>
+
+      <div id="instruction-list" class="container">
+
+        <div class='row'>
+          <div class="instruction-btn">
+            <button id="instruction-add-button" type="button" class="btn btn-primary">Add</button>
+          </div>
+  
+          <div class="instruction-btn">
+            <button id="instruction-remove-button" type="button" class="btn btn-primary">Remove</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="step1" class="">Step 1</label>
+          <textarea class="form-control instruction-input" id="step1" rows="6" cols="40"></textarea>
+        </div>
+
+      </div>
+
+      
+
+      
+
+      
+      <button class="btn submit-btn" type="submit" value="submit">Submit</button>
+       
+      
+    </form>
+  </div>
+    
+
+
+
+ 
+    
+  <script src="addPageScript.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+  crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" 
+  crossorigin="anonymous"></script>
+</body>
+</html>

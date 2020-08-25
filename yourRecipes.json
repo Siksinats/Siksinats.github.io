@@ -1,0 +1,78 @@
+{ "recipes": [
+    { 
+        "name": "Swedish Meatballs",
+        "type": "dinner",
+        "ingredients": ["Ground Beef", "Panko Bread Crumbs", "Parsley",
+             "Allspice", "Nutmeg", "Onion", "Garlic Powder", "Pepper",
+             "Salt", "Egg", "Olive Oil", "Butter", "Flour",  "Beef Broth",
+             "Heavy Cream", "Worcestershire Sauce", "Dijon Mustard"],
+        "measurements": ["1lb","1/4 cup", "1tbs", "1/4 tsp", "1/4 tsp", "1/4 cup", 
+             "1/2 tsp", "1/8 tsp", "1/2 tsp", "1", "1 tbsp", "5 tbsp", "3 tbsp",
+             "2 cup", "1 cup", "1 tbsp", "1 tsp"],
+        "picture": "https://www.thecookierookie.com/wp-content/uploads/2017/08/swedish-meatballs-1-of-11-500x500.jpg",
+        "description" : "Swedish meatballs made with ground beef and pork are gently spiced, baked, and served with brown sour cream gravy in this old family favorite.",
+        "instructions" : [
+            "In a medium sized bowl combine ground beef, panko, parsley, allspice, nutmeg, onion, garlic powder, pepper, salt and egg. Mix until combined.",
+            "Roll into 12 large meatballs or 20 small meatballs. In a large skillet heat olive oil and 1 Tablespoon butter. Add the meatballs and cook turning continuously until brown on each side and cooked throughout. Transfer to a plate and cover with foil.",
+            "Add 4 Tablespoons butter and flour to skillet and whisk until it turns brown. Slowly stir in beef broth and heavy cream. Add worchestershire sauce and dijon mustard and bring to a simmer until sauce starts to thicken. Salt and pepper to taste.",
+            "Add the meatballs back to the skillet and simmer for another 1-2 minutes. Serve over egg noodles or rice."
+        ],
+        "videoURL" : ""
+    },
+
+    {
+        "name": "Steak and Potatoes",
+        "type": "dinner",
+        "ingredients": ["Olive Oil", "Butter", "Potatoes", "Garlic", "Thyme", "Rosemary", "Oregano", "Steak", "Salt", "Pepper"],
+        "measurements": ["1 tbsp", "1 tbsp", "1 lb", "3 cloves", "1 tsp", "1 tsp", "1 tsp", "2 lean strips", "", ""],
+        "picture": "https://simply-delicious-food.com/wp-content/uploads/2019/02/steak-and-twice-baked-potatoes-4-3.jpg",
+        "description": "Skillet Garlic Butter Herb Steak and Potatoes is pan seared and cooked to perfection and topped with a garlic herb butter compound.",
+        "instructions" : [
+            "In a large cast iron skillet over medium high heat, add olive oil and butter, potatoes, garlic, thyme, rosemary and oregano. Cook for about 3 minutes, stir and cook and additional 3 minutes or until fork tender. Remove and set on a plate.",
+            "Turn the skillet to high heat. Add the steaks. Cook on each side for 3 minutes or until outside is browned. Reduce heat to medium high. Cook the steaks to desired doneness. Mine took about 10 minutes flipping 3 times to get a medium well.",
+            "Right before the steaks are done, make the garlic butter compound. Mix the butter, garlic and fresh chopped herbs. Slather on top of steaks. Add the potatoes back to the pan and heat through and let the butter melt into the steaks."
+        ],
+        "videoURL" : "https://www.youtube.com/watch?v=lkwJhbeIQaE"
+    },
+
+    {  
+        "name": "Curry Chicken",
+        "type": "lunch",
+        "ingredients": ["Chicken Breast", "Vegetable Oil", "Garlic", "Onion", "Curry Powder", "Thai Curry Paste", "Coconut Milk", 
+                        "Chicken Stock", "Brown Sugar", "Fish Sauce", "Lime Juice", "Cilantro", "White Rice", "Salt"],
+        "measurements": ["1 lb", "1 tbsp", "1 tbsp", "1 small", "2 tbsp", "1 tbsp", "15 oz","1/2 cup", "1 tbsp", "1 tsp", "2 tbsp",
+                        "Handfull", "4 cup", ""],
+        "picture": "https://cook.fnr.sndimg.com/content/dam/images/cook/fullset/2016/12/29/0/CCTIA301H_Chicken-Curry-and-Potatoes_s4x3.jpg.rend.hgtvcom.826.620.suffix/1483043433875.jpeg",
+        "description": "Tender chicken in a flavorful sauce is served over white rice. This coconut curry chicken is fragrant and offers complex flavors in an easy to make recipe.",
+        "instructions" : [
+            "Heat the oil in a large pot over medium low heat. Add the onions and minced garlic and cook for a few minutes until the onions are fragrant and softened.",
+            "Add the chicken and cook for 2-3 minutes, browning it a little. Add curry powder and paste; cook for 3-5 minutes.",
+            "Add the coconut milk, and let simmer for 15-20 minutes or until the chicken is fully cooked.",
+            "Add water or chicken stock depending on the consistency you want for the sauce, or let simmer longer to thicken if needed.",
+            "Stir in the brown sugar, fish sauce, and lime juice. Taste and salt if needed",
+            "Top with fresh cilantro, serve over cooked rice."
+        ],
+        "videoURL": "https://www.youtube.com/watch?v=irHKAb2rqDE"
+    },
+
+    {
+        "name": "Breakfast Casserole",
+        "type": "breakfast",
+        "ingredients": ["Sausage", "Egg", "Sour Cream", "Milk", "Green Onion", "Green Bell Pepper","Red Bell Pepper",
+                        "Cheddar Cheese", "Salt", "Pepper" ],
+        "measurements": ["2 lb", "12", "1 cup", "1/4 cup", "4", "1/2", "1/2", "2 cup", "", ""],
+        "picture": "https://amindfullmom.com/wp-content/uploads/2018/02/Sausage-Egg-Hash-Brown-Breakfast-Casserole.jpg",
+        "description" : "This easy Breakfast Casserole recipe is made with eggs, sausage, and cheese and only takes a few minutes to throw together. You can make ahead of time, so it's the perfect breakfast casserole for Christmas morning or any day!",
+        "instructions" : [
+            "Preheat oven to 350 degrees. Spray a 9x13’’ pan with cooking spray.",
+            "Combine the eggs, sour cream, milk, cheese and salt and pepper in a large bowl. Mix on low speed with electric mixers, just until combined.",
+            "Heat a large skillet over medium heat. Add sausage and cook until browned, breaking it into small pieces with a wooden spoon as it cooks. Drain most of the grease and add the sausage to the bowl with the egg mixture.",
+            "Add the bell peppers and onion to the same skillet the sausage was cooked in and sauté for 2- 3 minutes. Add to the bowl with the eggs and stir everything to combine.",
+            "Pour mixture into greased 9x13’’ pan and bake for 35-50 minutes or until the edges are set and the center is just barely jiggly.",
+            "Leftover egg casserole can be stored in the fridge and enjoyed within 3-4 days. Leftovers are delicious reheated in the microwave. "
+        ],
+        "videoURL" : ""
+    }
+
+]
+}
